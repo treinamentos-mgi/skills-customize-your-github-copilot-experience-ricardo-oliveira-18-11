@@ -3,28 +3,26 @@ description: "Instruções para usar sempre que criar ou editar arquivos markdow
 applyTo: "assignments/**/*.md"
 ---
 
-# Diretrizes para Arquivos Markdown de Tarefas
+# Diretrizes de Estrutura para Markdowns de Tarefas
 
-Todos os arquivos Markdown em `assignments/` devem seguir o template [`templates/assignment-template.md`](../../templates/assignment-template.md) e estas diretrizes.
+Todos os arquivos markdown de tarefas devem seguir estas diretrizes:
 
-## Estrutura obrigatória
+## 1. Uso do Template
 
-- Mantenha cada tarefa em um arquivo `README.md` dentro da pasta correspondente em `assignments/`.
-- Preserve a ordem e os títulos do template, incluindo os emojis. Use exatamente estes cabeçalhos:
-   - `# 📘 Atividade: [Título da Atividade]`
-   - `## 🎯 Objetivo`
-   - `## 📝 Tarefas`
-   - `### 🛠️ [Título da Tarefa]`
-   - `#### Descrição`
-   - `#### Requisitos`
-- Inclua uma seção `### 🛠️` para cada tarefa necessária; o exemplo de duas tarefas no template não significa que toda atividade deva ter exatamente duas.
-- Não remova as seções obrigatórias nem adicione seções extras, a menos que sejam solicitadas.
+- Os arquivos markdown de tarefas devem seguir a estrutura em [`templates/assignment-template.md`](../../templates/assignment-template.md).
+- A tarefa deve ser criada como um arquivo `README.md`
+- Não remova ou pule seções obrigatórias do template.
 
-## Conteúdo e tom
+## 2. Orientação das Seções
 
-- Use um título curto e descritivo para a atividade e para cada tarefa. Prefira títulos de tarefa específicos e orientados à ação.
-- Em `Objetivo`, resuma em uma ou duas frases o que o aluno aprenderá ou construirá.
-- Em `Descrição`, explique claramente o que o aluno deve fazer.
-- Em `Requisitos`, liste em tópicos os resultados ou comportamentos esperados. Seja específico e verificável.
-- Inclua exemplos de entrada e saída em blocos de código quando ajudarem a esclarecer o resultado esperado.
-- Mantenha o conteúdo educativo, adequado ao nível de dificuldade proposto, claro e encorajador para os alunos.
+Os cabeçalhos das seções devem usar EXATAMENTE o mesmo texto do template, incluindo os ícones emoji. NÃO traduza os cabeçalhos.
+
+- `# 📘 Assignment: [Assignment Title]` — Substitua `[Assignment Title]` por um nome curto e descritivo (ex: `Python Basics`, `Loops and Conditionals`, `Functions and Modules`).
+- `## 🎯 Objective` — Escreva 1-2 frases resumindo o que o aluno aprenderá ou realizará. Foque nas principais habilidades ou conceitos.
+- `## 📝 Tasks` — Para cada tarefa, use `### 🛠️ [Task Title]`:
+   - Use um nome de tarefa específico e orientado à ação
+   - Na Descrição, indique claramente o que o aluno deve fazer.
+   - Nos Requisitos, use bullet points para listar os resultados ou funcionalidades esperadas. Seja específico e mensurável
+   - Forneça exemplos de entrada/saída em blocos de código se útil.
+
+Não inclua seções extras a menos que explicitamente especificado.
